@@ -1,8 +1,8 @@
 {
   "Comment": "A description of my state machine",
-  "StartAt": "Serialize Image Data",
+  "StartAt": "Serialize",
   "States": {
-    "Serialize Image Data": {
+    "Serialize": {
       "Type": "Task",
       "Resource": "arn:aws:states:::lambda:invoke",
       "Parameters": {
@@ -44,9 +44,9 @@
           "BackoffRate": 2
         }
       ],
-      "Next": "Low Confidence Inference"
+      "Next": "Inference"
     },
-    "Low Confidence Inference": {
+    " Inference": {
       "Type": "Task",
       "Resource": "arn:aws:states:::lambda:invoke",
       "OutputPath": "$.Payload",
