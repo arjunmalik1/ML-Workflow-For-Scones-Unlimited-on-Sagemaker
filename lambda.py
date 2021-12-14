@@ -1,4 +1,4 @@
-### udacity-nd009t-c2-project-serializeImageData
+
 import json
 import boto3
 import base64
@@ -33,7 +33,7 @@ def lambda_handler(event, context):
 
 
 ##classifier lambda_function
-#Code based on https://aws.amazon.com/blogs/machine-learning/call-an-amazon-sagemaker-model-endpoint-using-amazon-api-gateway-and-aws-lambda/
+
 import os
 import io
 import boto3
